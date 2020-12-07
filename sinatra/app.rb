@@ -11,7 +11,5 @@ get '/secret' do
 end
 
 get '/cat' do
-  "<div style='border: 3px dashed red'>
-  <img src='https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697'>
-  </div>"
+  erb(:index)
 end
