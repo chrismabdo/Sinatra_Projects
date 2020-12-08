@@ -1,5 +1,11 @@
-<h1> "my name is <%= @random_name %>" </h1>
+<% if @name %>
+<h1>my name is <%= @name %></h1>
+<% end %>
+<form action="/named-cat">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
 
-"<div style='border: 3px dashed red'>
-<img src='https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697'>
-</div>"
+<div style='border: 3px dashed red'>
+  <img src='https://i.insider.com/5484d9d1eab8ea3017b17e29?width=600&format=jpeg&auto=webp'>
+</div>
